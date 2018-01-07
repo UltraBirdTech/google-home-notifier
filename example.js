@@ -6,7 +6,7 @@ var app = express();
 const serverPort = 8091; // default port
 
 var deviceName = 'Google Home';
-var ip = '192.168.1.20'; // default IP
+var ip = '192.168.101.9'; // default IP
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -21,7 +21,7 @@ app.post('/google-home-notifier', urlencodedParser, function (req, res) {
      ip = req.query.ip;
   }
 
-  var language = 'pl'; // default language code
+  var language = 'ja'; // default language code
   if (req.query.language) {
     language;
   }
